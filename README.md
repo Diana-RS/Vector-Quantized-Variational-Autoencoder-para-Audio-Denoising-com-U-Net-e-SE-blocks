@@ -3,8 +3,7 @@ Propomos um modelo inovador de audio denoising utilizando um híbrido de Vector 
 A arquitetura do modelo VQVAE-UNet combina técnicas de quantização vetorial e redes neurais convolucionais para alcançar uma representação discreta e detalhada dos dados de entrada. A estrutura base é fundamentada na arquitetura da U-Net, mas incluindo um bloco de Squeeze-and-Excitation em cada um dos seus estágios e um quantizador vetorial em seu bottleneck.
 
 ![Vector Quantized Variational Autoencoder](images/VQVAE.png)
-
-**Vector Quantized Variational Autoencoder**
+*Vector Quantized Variational Autoencoder*
 
 
 A abordagem da U-Net se justifica pela sua grande capacidade de realizar reconstruções complexas, sendo originalmente desenvolvida para segmentação de imagens médicas. Já os SE-blocks foram escolhidos para realçar a representatividade dos feature maps ao recalibrar dinamicamente os canais, numa forma de channel-wise self-attention, amplificando consideravelmente a capacidade do modelo a um custo computacional extra praticamente desprezível.
