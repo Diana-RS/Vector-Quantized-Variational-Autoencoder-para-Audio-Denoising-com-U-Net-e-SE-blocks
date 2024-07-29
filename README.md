@@ -2,7 +2,7 @@
 Propomos um modelo inovador de audio denoising utilizando um híbrido de Vector Quantized Variational Autoencoder (VQVAE) e U-Net combinado com a  Transformada de Fourier de Tempo Curto (STFT) para processamento de espectrogramas limpos e ruidosos.
 A arquitetura do modelo VQVAE-UNet combina técnicas de quantização vetorial e redes neurais convolucionais para alcançar uma representação discreta e detalhada dos dados de entrada. A estrutura base é fundamentada na arquitetura da U-Net, mas incluindo um bloco de Squeeze-and-Excitation em cada um dos seus estágios e um quantizador vetorial em seu bottleneck.
 
-![Vector Quantized Variational Autoencoder]([Screenshot from 2024-07-29 15-30-02](https://github.com/user-attachments/assets/4f8bb478-425f-4d65-be17-47885de3d4f4))
+
 
 
 
