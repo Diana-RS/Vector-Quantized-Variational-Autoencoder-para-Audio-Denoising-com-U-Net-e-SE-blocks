@@ -82,7 +82,8 @@ Comparando a qualidade, a inteligibilidade e a presença de ruído entre os áud
 
 
 <audio controls>
-  <source src="https://github.com/Diana-RS/Vector-Quantized-Variational-Autoencoder-para-Audio-Denoising-com-U-Net-e-SE-blocks/raw/main/audios/denoised_audio1.wav" type="audio/wav">
+  <source src="audios/noised_audio3.wav">
   Your browser does not support the audio element.
 </audio>
 
+Your browser does not support the audio element.
