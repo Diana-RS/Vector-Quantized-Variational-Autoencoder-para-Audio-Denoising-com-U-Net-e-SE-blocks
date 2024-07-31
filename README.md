@@ -76,8 +76,12 @@ Comparando a qualidade, a inteligibilidade e a presença de ruído entre os áud
 [Audio ruidoso](audios/denoised_audio2.wav)
 [Audio ruidoso](audios/good_audio2.wav)
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="audios/denoised_audio2.wav"></iframe>
-
 [Audio ruidoso](audios/noised_audio3.wav)
 [Audio ruidoso](audios/denoised_audio3.wav)
 [Audio ruidoso](audios/good_audio3.wav)
+
+
+<audio controls>
+  <source src="audios/noised_audio3.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
