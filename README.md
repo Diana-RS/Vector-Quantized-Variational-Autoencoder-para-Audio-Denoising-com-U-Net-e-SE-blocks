@@ -81,9 +81,10 @@ Comparando a qualidade, a inteligibilidade e a presença de ruído entre os áud
 [Audio ruidoso](audios/good_audio3.wav)
 
 
+## Listen to the audio
+
 <audio controls>
-  <source src="audios/noised_audio3.wav">
+  <source src="audios/denoised_audio3.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 
-Your browser does not support the audio element.
