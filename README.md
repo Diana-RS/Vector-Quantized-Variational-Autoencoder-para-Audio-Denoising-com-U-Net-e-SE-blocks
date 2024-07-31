@@ -67,3 +67,15 @@ NSR (Noise-to-Signal Ratio): Mede a relação entre a potência do ruído e a po
 ![Métricas](images/Métricas.png)
 
 Comparando a qualidade, a inteligibilidade e a presença de ruído entre os áudios ruidosos e reconstruídos (denoised) tendo os áudios originais como referência, as métricas objetivas mostraram avanços nas três categorias, com diferenças consideráveis. Para fins de comparação, o STOI varia numa range de 0 a 1, sendo 0 completamente ininteligível e 1 perfeitamente inteligível. Tendo como padrão os áudios originais, os respectivos áudios ruidosos são significativamente menos compreensíveis, com STOI de 0.248, situação que muda com o processo de denoising, que aumenta o STOI para 0.852, consideravelmente elevando a inteligibilidade, embora ainda haja uma diferença em relação ao áudio limpo. De forma semelhante, o modelo também melhorou a qualidade perceptual do áudio em relação à sua versão ruidosa, levando o PESQ de 1.178 para 2.477. Um ponto a se considerar, no entanto, é que a range dessa métrica varia de -0.5 a 4.5, ou seja, apesar do avanço na qualidade comparado ao ruidoso, o áudio reconstruído ainda está longe do que seria considerado ótimo. Já quanto ao NSR, que mede a proporção entre ruído e sinal, uma queda de 3.52 dB para 0.052 dB representa um avanço evidente, indicando uma eliminação substancial de ruído e comprovando objetivamente a eficácia do modelo proposto.
+
+[Audio ruidoso](audios/noisy_audio1.wav)
+[Audio sem ruido](audios/denoised_audio1.wav)
+[Audio ruidoso](audios/good_audio1.wav)
+
+[Audio ruidoso](audios/noised_audio2.wav)
+[Audio ruidoso](audios/denoised_audio2.wav)
+[Audio ruidoso](audios/good_audio2.wav)
+
+[Audio ruidoso](audios/noised_audio3.wav)
+[Audio ruidoso](audios/denoised_audio3.wav)
+[Audio ruidoso](audios/good_audio3.wav)
