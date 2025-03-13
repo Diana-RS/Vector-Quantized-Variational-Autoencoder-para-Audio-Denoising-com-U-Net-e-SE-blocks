@@ -22,8 +22,11 @@ SE blocks are integrated into the U-Net to enhance feature maps by adaptively we
 The Short-Time Fourier Transform (STFT) is employed to convert audio signals into time-frequency representations (spectrograms). This transformation is critical for capturing both temporal and spectral characteristics of the audio. For this project, the STFT is implemented using the SciPy library with the following parameters:
 
 Sampling frequency (fs): 8000 Hz
+
 Number of points per segment (nperseg): 519
+
 Number of overlap points (noverlap): 488
+
 
 These parameters ensure that the resulting spectrograms are square-shaped, which is optimal for convolutional operations in the U-Net architecture.
 
@@ -39,32 +42,39 @@ Optimization: The AdamW optimizer updates the model weights based on the gradien
 
 Validation: The model's performance is evaluated on a separate test dataset to monitor generalization and adjust hyperparameters as needed.
 
-![Espectrogramas normais e em log-magnitude](images/logmagnitude.png)
+
+![](images/logmagnitude.png)
 
 *Original spectogram (a), magnitude (b), log-magnitude (c).*
 
 
 Exemplo 1:
-![Espectrogramas](images/ex1.png)
+![](images/ex1.png)
 
 *Clean spectograms (a), noisy (b) and denoised (c).*
 
 Exemplo 2:
-![Spectograms2](images/ex2.png)
+![](images/ex2.png)
 
 The model's performance is assessed using the following objective metrics:
 
 STOI (Short-Time Objective Intelligibility): Measures speech intelligibility on a scale from 0 (completely unintelligible) to 1 (perfectly intelligible).
+
 PESQ (Perceptual Evaluation of Speech Quality): Evaluates perceptual speech quality, ranging from -0.5 to 4.5.
+
 NSR (Noise-to-Signal Ratio): Quantifies the ratio of noise power to signal power.
+
 
 ![Metrics](images/Métricas.png)
 
 The proposed model demonstrates significant improvements in denoising performance:
 
 STOI: Increased from 0.248 (noisy audio) to 0.852 (denoised audio), indicating a substantial enhancement in intelligibility.
+
 PESQ: Improved from 1.178 to 2.477, reflecting better perceptual quality, though further optimization is needed to reach higher scores.
+
 NSR: Reduced from 3.52 dB to 0.052 dB, confirming effective noise suppression.
+
 
 The model's denoising capability is visually evident in the spectrograms, where noise is nearly eliminated without significant loss of signal integrity. Auditory analysis further supports these findings, with denoised audio exhibiting improved clarity and reduced background noise.
 
