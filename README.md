@@ -48,12 +48,10 @@ Validation: The model's performance is evaluated on a separate test dataset to m
 *Original spectogram (a), magnitude (b), log-magnitude (c).*
 
 
-Exemplo 1:
 ![](images/ex1.png)
 
 *Clean spectograms (a), noisy (b) and denoised (c).*
 
-Exemplo 2:
 ![](images/ex2.png)
 
 The model's performance is assessed using the following objective metrics:
