@@ -30,9 +30,13 @@ These parameters ensure that the resulting spectrograms are square-shaped, which
 To simulate real-world noise conditions, Gaussian noise is added to the input spectrograms during training. The model is trained iteratively, alternating between training and validation phases:
 
 Input: Noisy spectrograms are fed into the VQVAE-UNet.
+
 Reconstruction: The model processes the noisy spectrograms through the VQVAE, generating discrete latent representations.
+
 Loss Calculation: The reconstruction loss is computed relative to the original (clean) spectrograms. The total loss includes a quantization loss, which ensures the latent codes remain close to the codebook's quantization centers.
+
 Optimization: The AdamW optimizer updates the model weights based on the gradient of the total loss.
+
 Validation: The model's performance is evaluated on a separate test dataset to monitor generalization and adjust hyperparameters as needed.
 
 ![Espectrogramas normais e em log-magnitude](images/logmagnitude.png)
